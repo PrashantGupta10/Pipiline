@@ -12,21 +12,24 @@ pipeline {
       stage('Code Checkout') {
          steps {
             // Get some code from a GitHub repository
-            git 'https://github.com/sidvijay18/tomcat_pipeline.git'   
+            git 'https://github.com/PrashantGupta10/Pipiline.git'   
          }
 
-      }
-      
+      }      
       
       stage('Code Testing') {
-         steps {
-           
+         steps {           
             // To run Maven on a Windows agent, use
            bat "mvn test"
          }
-      }
-         
-          
+      }   
+      
+      stage('Code Build') {
+         steps {           
+            // To run Maven on a Windows agent, use
+           bat "mvn package"
+         }
+      }   
       
       stage('Code Deploy') {
          steps {
