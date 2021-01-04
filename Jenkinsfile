@@ -31,7 +31,7 @@ git branch: 'feature/satyam', url: 'https://github.com/sidvijay18/tomcat_pipelin
          steps {
         
             // To run Maven on a Windows agent, use
-           bat label: '', script: 'copy /Y target\\satyam-1.0.war C:\\Users\\hp\\apache-tomcat-9.0.16-windows-x64\\apache-tomcat-9.0.16\\webapps'
+           bat label: '', script: 'copy /Y target\\prashant-1.0.war C:\\Users\\hp\\apache-tomcat-9.0.16-windows-x64\\apache-tomcat-9.0.16\\webapps'
          }
 
       }
